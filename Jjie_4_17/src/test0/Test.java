@@ -2,7 +2,7 @@ package test0;
 
 public class Test {
     public static void main(String[] args) {
-        int[] arr = {3, 1, 4, 3, 2, 2, 4};
+        int[] arr = {3,1,4,3,2,2,4};
         int k = 2;
         System.out.println(Solution.countGood(arr, k));
     }
@@ -45,10 +45,15 @@ public class Test {
                 //length是要达到k好数组的最小长度
                 left=i;
                 right= left + length - 1;
+                if(right>end){
+                    continue;
+                }
                 while (right+1<=end && !check(nums, left, right, k)) {
                     right++;
                 }
-                res+=(end-right+1);
+                if(check(nums,left,right,k)) {
+                    res += (end - right + 1);
+                }
             }
             return res;
         }
