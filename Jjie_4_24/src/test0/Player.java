@@ -1,4 +1,17 @@
 package test0;
 
-public class Player {
+public abstract class Player extends Person implements Study{
+
+    @Override
+    public void study() {
+
+    }
+
+    public Player(int age) {
+        super(age);
+    }
+
+    public Player() {
+    }
+
 }
