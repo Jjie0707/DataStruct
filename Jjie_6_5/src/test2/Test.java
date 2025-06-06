@@ -15,11 +15,13 @@ public class Test {
             char c1=s1.charAt(i);
             char c2=s2.charAt(i);
             boolean flag=true;
-            for(ArrayList list:s.keySet()){
+            for(ArrayList<Character> list:s.keySet()){
                 if(list.contains(c1) || list.contains(c2)){
+
                     s.get(list).offer(c1);
                     s.get(list).offer(c2);
                     flag=false;
+                    break;
                 }
             }
             if(flag){
