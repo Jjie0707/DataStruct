@@ -37,8 +37,7 @@ public class Test {
         if(check(hash1,hash2)) ret.add(length-len);
         return ret;
     }
-    public static boolean check(HashMap<Character,Integer> hash1,
-                                HashMap<Character,Integer> hash2){
+    public static boolean check(HashMap<Character,Integer> hash1, HashMap<Character,Integer> hash2){
         for(char c:hash2.keySet()){
             if(hash1.get(c)==null || !hash1.get(c).equals(hash2.get(c))){
                 return false;
