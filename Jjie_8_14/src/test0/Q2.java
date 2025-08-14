@@ -3,13 +3,13 @@ package test0;
 import java.util.Arrays;
 
 public class Q2 {
-    public static void main(String[] args) {
-        int[][] matrix={{0,1,2,0},{3,4,5,2},{1,3,1,5}};
-        setZeroes(matrix);
-        for(int[] tem:matrix){
-            System.out.println(Arrays.toString(tem));
-        }
-    }
+//    public static void main(String[] args) {
+//        int[][] matrix={{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+//        setZeroes(matrix);
+//        for(int[] tem:matrix){
+//            System.out.println(Arrays.toString(tem));
+//        }
+//    }
     public static void setZeroes(int[][] matrix) {
         int tem=1;//用来标记第一行是否要置为0
         int l=matrix.length,w=matrix[0].length;
