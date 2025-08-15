@@ -13,6 +13,14 @@ public class Test {
         int length=nums.length;
         int j=0;
         int min=nums[0];
+        // for(int i=0;i<length;i++){
+        //     if(nums[i]<=nums[0]){
+        //         j=i;
+        //         min=nums[i];
+        //     }
+        // }
+        // //走到这里说明已经找到了数组的最小值
+        // //最小值的下标是j
         for(int i=0;i<length;i++){
             if(nums[i]<=nums[0]){
                 j=i;
