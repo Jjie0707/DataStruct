@@ -11,11 +11,23 @@ public class Test {
         ListNode right=new ListNode(0);
         ListNode rightC=right;
 
+
         // ListNode left=new ListNode(0);
         // ListNode leftC=left;
         // ListNode right=new ListNode(0);
         // ListNode rightC=right;
         
+
+//        while(cur!=null){
+//            if(cur.val<=x){
+//                leftC.next=cur;
+//                leftC=cur;
+//            }else{
+//                rightC.next=cur;
+//                rightC=cur;
+//            }
+//        }
+
         while(cur!=null){
             if(cur.val<=x){
                 leftC.next=cur;
