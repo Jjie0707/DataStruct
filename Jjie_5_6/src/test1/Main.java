@@ -6,6 +6,20 @@ import com.sun.source.tree.Tree;
 import java.util.Scanner;
 
 public class Main {
+    // public static TreeNode creatTree(String s){
+    //     TreeNode root=new TreeNode();
+    //     char c=s.charAt(i);
+    //     if(c!='#'){
+    //         i++;
+    //         root.val=c;
+    //         root.left=creatTree(s);
+    //         root.right=creatTree(s);
+    //     }else{
+    //         i++;
+    //         root=null;
+    //     }
+    //     return root;
+    // }
     public static int i=0;
     public static class TreeNode{
         public char val;
