@@ -10,6 +10,15 @@ public class Test {
         ListNode leftC=left;
         ListNode right=new ListNode(0);
         ListNode rightC=right;
+//        while(cur!=null){
+//            if(cur.val<=x){
+//                leftC.next=cur;
+//                leftC=cur;
+//            }else{
+//                rightC.next=cur;
+//                rightC=cur;
+//            }
+//        }
         while(cur!=null){
             if(cur.val<=x){
                 leftC.next=cur;
