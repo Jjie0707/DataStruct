@@ -8,6 +8,7 @@ public class Test {
     }
 
     class Solution {
+<<<<<<< HEAD
 //        public static boolean check(int[] arr, int start, int end, int k) {
 //            int count = 0;
 //            for (int i = start; i <= end; i++) {
@@ -22,6 +23,23 @@ public class Test {
 //            }
 //            return count == k;
 //        }
+=======
+        class Solution {
+        public static boolean check2(int[] arr, int start, int end, int k) {
+            int count = 0;
+            for (int i = start; i <= end; i++) {
+                for (int j = i + 1; j <= end; j++) {
+                    if (arr[i] == arr[j]) {
+                        count++;
+                    }
+                    if (count >= k) {
+                        return true;
+                    }
+                }
+            }
+            return count == k;
+            
+>>>>>>> test
         public static boolean check(int[] arr, int start, int end, int k) {
             int count = 0;
             for (int i = start; i <= end; i++) {
