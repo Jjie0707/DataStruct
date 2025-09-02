@@ -41,7 +41,7 @@ public class Pools {
         //初始化鱼塘
         this.init(size);
 
-        //如果要展示鱼塘可以取消注释
+        //如果不需要展示鱼塘可以注释
         showPools();
 
         //count统计钓到的鱼的数量，time1和time2分别统计路上和在各池塘总共停留的时间
