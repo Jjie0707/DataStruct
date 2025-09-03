@@ -30,7 +30,7 @@ public class Pools {
     // 鱼塘的大小和小明的时间通过参数size和time来传递
     public void fish(int size,int time){
         //检查一下时间和池塘大小的合理性,不合理直接返回0条鱼
-        if(size<=0 || time<=0) {
+        if(!(size>=2 && size<=25)|| !(time>=1 && time<=16)) {
             String ret ="最终统计结果，小明路途花费合计0分钟，在各池塘停留合计0分钟，总计耗时0分钟，获得鱼量合计0条";
             writeToFishFile(ret);
             return;
